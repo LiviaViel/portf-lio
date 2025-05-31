@@ -2,19 +2,22 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Meu portfólio</title>
 </head>
 
 <body>
     <header class="container text-center">
-        <img src="imagem/avatar.png" alt="avatar da Livia" class="rounded-circle" width="150" height="150" srcset="">
+        <img src="imagem/avatar.png" alt="avatar da Lívia" class="rounded-circle" width="150" height="150" />
         <p class="lead">me chamo Lívia</p>
         <h1>Eu sou estudante</h1>
-        <p>Sou estudante dedicada e apaixonada por tecnologia e criatividade. Neste portfólio, você encontrará alguns dos meus projetos desenvolvidos com muito esforço e carinho. Estou sempre buscando aprender mais para ser uma boa profissional nesta Área.</p>
+        <p>
+            Sou estudante dedicada e apaixonada por tecnologia e criatividade. Neste portfólio, você encontrará alguns dos meus projetos desenvolvidos com muito esforço e carinho. Estou sempre buscando aprender mais para ser uma boa profissional nesta área.
+        </p>
         <p>Minhas habilidades</p>
         <div>
             <p class="badge bg-secondary">HTML</p>
@@ -22,22 +25,100 @@
             <p class="badge bg-secondary">JavaScript</p>
         </div>
     </header>
-    <main class="container">
+
+    <main class="container mt-5">
         <h2>Meus projetos</h2>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="imagem/l-flix.png" class="card-img-top" alt="Imagem do projeto L-viaFlix" />
                     <div class="card-body">
-                      <h5 class="card-title">Webpage</h5>
-                      <p class="card-text">Aqui está um de meus projetos, fiz ao decorrer de meus estudos</p>
-                      <a href="#" class="btn btn-primary">Venha conhecer</a>
+                        <h5 class="card-title">L-viaFlix: Plataforma de Filmes</h5>
+                        <p class="card-text">
+                            Projeto de uma plataforma web para exibição e pesquisa de filmes, onde os usuários podem navegar por diversas categorias, assistir trailers e saber mais sobre seus filmes favoritos. Desenvolvido com HTML, CSS e JavaScript para criar uma experiência visual agradável e interativa.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
                     </div>
-                  </div>
+                </div>
+            </div>
+
+           
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="imagem/projeto-segredos-da-floresta.png" class="card-img-top" alt="Imagem do projeto Em Busca da Vila Mágica" />
+                    <div class="card-body">
+                        <h5 class="card-title">Em Busca da Vila Mágica: Jogo Interativo</h5>
+                        <p class="card-text">
+                            Jogo interativo desenvolvido com HTML, CSS e JavaScript que convida o jogador a explorar uma vila encantada, resolver desafios e descobrir mistérios. Um projeto que une criatividade e programação para oferecer uma experiência divertida e educativa.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
+                    </div>
+                </div>
             </div>
         </div>
-
     </main>
+
+    
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">L-viaFlix: Plataforma de Filmes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        L-viaFlix é uma plataforma web criada para facilitar a busca e a visualização de filmes. O projeto foi desenvolvido usando HTML, CSS e JavaScript, com foco em criar uma interface intuitiva e responsiva.
+                    </p>
+                    <p>
+                        A página permite aos usuários navegar por diferentes gêneros de filmes, assistir trailers e acessar informações detalhadas sobre cada filme, como sinopse, elenco e avaliações.
+                    </p>
+                    <p>
+                        O uso do JavaScript permite a interação dinâmica com o conteúdo, tornando a experiência do usuário mais fluida e agradável. Este projeto me ajudou a aprimorar minhas habilidades em desenvolvimento front-end e a entender melhor a criação de interfaces interativas.
+                    </p>
+                    <img src="imagem/l-flix.png" class="img-fluid w-100" alt="Captura da plataforma L-viaFlix" />
+                </div>
+                <div class="modal-footer">
+                    <a href="https://liviaviel.github.io/L-viaFlix/" target="_blank" class="btn btn-primary">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Em Busca da Vila Mágica: Jogo Interativo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        "Em Busca da Vila Mágica" é um jogo interativo que desenvolvi utilizando HTML, CSS e JavaScript. O objetivo é proporcionar uma experiência divertida, na qual o jogador explora uma vila encantada e resolve desafios para avançar na história.
+                    </p>
+                    <p>
+                        O projeto combina elementos de design gráfico, programação e storytelling para criar um ambiente envolvente. Além disso, o jogo foi pensado para ser educativo, estimulando o raciocínio lógico e a criatividade.
+                    </p>
+                    <img src="imagem/projeto-segredos-da-floresta.png" class="img-fluid w-100" alt="Captura do jogo Em Busca da Vila Mágica" />
+                </div>
+                <div class="modal-footer">
+                    <a href="https://liviaviel.github.io/Em-busca-da-vila-m-gica/" target="_blank" class="btn btn-primary">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5 text-center">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/liviaviel" target="_blank">GitHub</a>
+        </div>
+        <p class="my-5">© 2024. Produzido por Lívia Viel</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
